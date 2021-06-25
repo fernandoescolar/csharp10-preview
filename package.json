@@ -1,0 +1,21 @@
+{
+  "name": "csharp10-slides",
+  "version": "1.0.0",
+  "description": "Slides for the session about C# 10 news",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "author": {
+    "email": "f.escolar@hotmail.com",
+    "name": "Fernando Escolar",
+    "url": "http://fernandoescolar.github.io"
+  },
+  "license": "CC-BY-SA-4.0",
+  "private": true,
+  "devDependencies": {
+    "reveal.js": "^4.1.3",
+    "vite": "^2.3.8"
+  }
+}
