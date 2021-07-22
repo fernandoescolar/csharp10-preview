@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31423.177
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "src\Presentation\Presentation.csproj", "{64858D4E-5597-4DE0-8805-80329D168995}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spectre.Console.SyntaxHighlighter", "lib\Spectre.Console.SyntaxHighlighter\Spectre.Console.SyntaxHighlighter.csproj", "{9F076289-F637-4ADC-B9FE-990D7455274B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spectre.Console.Slides", "lib\Spectre.Console.Slides\Spectre.Console.Slides.csproj", "{BDF1DAE9-23F3-4754-8BB9-9FFBA454147B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{6CFE5160-E129-47CA-9E3C-7A4476E468D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F59ACE0B-D3BC-4A3B-AC1D-A769EE3A8FAD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation.Statistics", "lib\Presentation.Statistics\Presentation.Statistics.csproj", "{887E7451-C442-4DD0-86D5-D75D67F7CC78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64858D4E-5597-4DE0-8805-80329D168995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64858D4E-5597-4DE0-8805-80329D168995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64858D4E-5597-4DE0-8805-80329D168995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64858D4E-5597-4DE0-8805-80329D168995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F076289-F637-4ADC-B9FE-990D7455274B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F076289-F637-4ADC-B9FE-990D7455274B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F076289-F637-4ADC-B9FE-990D7455274B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F076289-F637-4ADC-B9FE-990D7455274B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDF1DAE9-23F3-4754-8BB9-9FFBA454147B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDF1DAE9-23F3-4754-8BB9-9FFBA454147B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDF1DAE9-23F3-4754-8BB9-9FFBA454147B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDF1DAE9-23F3-4754-8BB9-9FFBA454147B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{887E7451-C442-4DD0-86D5-D75D67F7CC78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{887E7451-C442-4DD0-86D5-D75D67F7CC78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{887E7451-C442-4DD0-86D5-D75D67F7CC78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{887E7451-C442-4DD0-86D5-D75D67F7CC78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{64858D4E-5597-4DE0-8805-80329D168995} = {F59ACE0B-D3BC-4A3B-AC1D-A769EE3A8FAD}
+		{9F076289-F637-4ADC-B9FE-990D7455274B} = {6CFE5160-E129-47CA-9E3C-7A4476E468D2}
+		{BDF1DAE9-23F3-4754-8BB9-9FFBA454147B} = {6CFE5160-E129-47CA-9E3C-7A4476E468D2}
+		{887E7451-C442-4DD0-86D5-D75D67F7CC78} = {6CFE5160-E129-47CA-9E3C-7A4476E468D2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {428BAA40-5062-4219-B31B-98178B273705}
+	EndGlobalSection
+EndGlobal

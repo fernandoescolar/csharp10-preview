@@ -7,10 +7,7 @@ https://www.meetup.com/es-ES/madriddotnet/events/278727438/?_xtd=gqFyqTIxNDUxMTU
 ## Use
 
 ```bash
-npm install
-npm run dev
+dotnet run
 ```
 
-The presentation will run locally at http://localhost:3000. You can edit the index.html and index.js to see it auto-reload.
-
-To build the presentation for hosting, run npm run build, which creates the dist folder.git
+The presentation will run in your terminal.

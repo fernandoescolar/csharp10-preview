@@ -1,2 +1,9 @@
-dist
+.vs
+.vscode
+bin
+obj
 node_modules
+dist
+key.json
+yarn.lock
+package-lock.json

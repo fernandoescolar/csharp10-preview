@@ -1,0 +1,506 @@
+﻿title: Hot Crazy C# 10
+date: 2021-06-30
+slides:
+- markup: |
+    [underline bold white]Fernando Escolar:[/]
+        :growing_heart: [green]Estrella galicia[/]
+        :thumbs_down: [red]Verdura[/]
+        :artist_palette: [#ffa500]Naranja[/]
+        :video_game: [white]Zelda link's awakening[/]
+        :laptop: [blue]SCRM Lidl Digital Hub[/]
+        :bird: [bold]@fernandoescolar[/]
+        :e_mail: fer.escolar[bold][[at]][/]gmail.com
+        :link: [underline bold cyan]www.developerro.com[/]
+  centered: true
+  alignment: left
+- title: Hot Crazy C# 10
+  color: '#FF6600'
+  centered: true
+  alignment: center
+- image: Sun Microsystems
+  src: sun.png
+  centered: true
+  showHeader: true
+- image: Java
+  src: java.png
+  centered: true
+  showHeader: true
+- markup: |
+    █████████████  ████████████      ████████         ████████
+    █████████████  ███████████████   █████████       █████████
+        █████        ████   █████       ████████   ████████
+        █████        ███████████        ████  ███ ███  ████
+        █████        ███████████        ████  ███████  ████
+        █████        ████   █████       ████   █████   ████
+    █████████████  ███████████████   ██████     ███     ██████
+    █████████████  ████████████      ██████      █      ██████
+  padding:
+    top: 4
+    left: 8
+- image: Microsoft
+  src: microsoft.png
+  centered: true
+  showHeader: true
+- markup: |
+    [bold][/]
+      ____                   ___                        __     
+    /\  _`\                /\_ \                      /\ \    
+    \ \ \L\ \    ___   _ __\//\ \      __      ___    \_\ \   
+     \ \  _ <'  / __`\/\`'__\\ \ \   /'__`\  /' _ `\  /'_` \  
+      \ \ \L\ \/\ \L\ \ \ \/  \_\ \_/\ \L\.\_/\ \/\ \/\ \L\ \ 
+       \ \____/\ \____/\ \_\  /\____\ \__/.\_\ \_\ \_\ \___,_\
+        \/___/  \/___/  \/_/  \/____/\/__/\/_/\/_/\/_/\/__,_ /
+  padding:
+    top: 3
+    left: 8
+- markup: |
+     ─────▄█████▄─────
+     ───▄█▌▒▐█████▄───
+     ──███▒▒████████──
+     ─███▌▒▐█████████─
+     ████▒▒▒▒▀██▒▒▒▒▀█
+     ███▌▒██▒▐█▌▒██▒▐█
+     ███▒▐█▌▒██▒▐█▌▒██
+     ██▌▒██▒▐█▌▒██▒▐██
+     ██▒▐█▌▒██ ▒▒▒▒███
+     ─███████▌▒██████─
+     ──██████▒▐█████──
+     ───▀███▌▒████▀───
+     ─────▀█████▀───── 
+  padding:
+    top: 4
+    left: 8
+- image: Netbeans
+  src: netbeans.png
+  centered: true
+  showHeader: true
+- markup: |
+    [bold][/]
+     _    _                              _ _
+    |  \/  (_) ___ _ __ ___  ___  ___  / _| |_       
+    | |\/| | |/ __| '__/ _ \/ __|/ _ \| |_| __|      
+    | |  | | | (__| | | (_) \__ \ (_) |  _| |_       
+    |_|  |_|_|\___|_|  \___/|___/\___/|_|  \__|      
+    __     ___                 _       _             
+    \ \   / (_)___ _   _  __ _| |     | |  _     _   
+     \ \ / /| / __| | | |/ _` | |  _  | |_| |_ _| |_ 
+      \ V / | \__ \ |_| | (_| | | | |_| |_   _|_   _|
+       \_/  |_|___/\__,_|\__,_|_|  \___/  |_|   |_|  
+  padding:
+    top: 4
+    left: 8
+- title: Colusa OmniWare
+- markup: |
+    [bold][/]
+      _____           
+     / ____|_     _   
+    | |   _| |_ _| |_ 
+    | |  |_   _|_   _|
+    | |____|_|   |_|  
+     \_____|          
+  padding:
+    top: 4
+    left: 8
+- markup: |
+    [bold][/]
+      _____           
+     / ____|_     _      _     _
+    | |   _| |_ _| |_  _| |_ _| |_ 
+    | |  |_   _|_   _||_   _|_   _|
+    | |____|_|   |_|    |_|   |_|  
+     \_____| 
+  padding:
+    top: 4
+    left: 8
+- markup: |
+    [bold][/]
+      _____    _     _             
+     / ____| _| |_ _| |_ 
+    | |     |_   _|_   _|
+    | |       |_|   |_|  
+    | |____  _| |_ _| |_ 
+     \_____||_   _|_   _|          
+              |_|   |_|  
+  padding:
+    top: 4
+    left: 8
+- markup: |
+    [bold][/]
+      _____  _  _   
+     / ____|| || |_ 
+    | |   |_  __  _|
+    | |    _| || |_ 
+    | |___|_  __  _|
+     \_____||_||_|
+  padding:
+    top: 4
+    left: 8
+- tree: :bookmark_tabs:[magenta] History[/] (1/3)
+  items:
+    - item: v1.0 [yellow]2002[/]
+      items:
+      - item: :books:[gray] .Net Framework 1.0[/]
+      - item: Object Oriented Language
+    - item: v1.2 [yellow]2003[/]
+      items:
+      - item: :books:[gray] .Net Framework 1.1[/]
+      - item: Bug fixes
+      - item: The garbage collector now works
+    - item: v2.0 [yellow]2005[/]
+      items:
+      - item: :books:[gray] .Net Framework 2.0[/]
+      - item: Generics, Nullable types, Partials, Iterators, Anonymous methods, Covariance and Contravariance
+    - item: v3.0 [yellow]2007[/]
+      items:
+      - item: :books:[gray] .Net Framework 3.0 & 3.5[/]
+      - item: Auto-Properties, Anonimous types, Lambda expressions
+      - item: Query expressions, Expression Tree, Extension methods, Linq, var …
+    - item: v4.0 [yellow]2010[/]
+      items:
+      - item: :books:[gray] .Net Framework 4.0[/]
+      - item: Dynamic binding, Named/optional arguments
+      - item: Generic covariant and contravariant, Embedded interop types
+    - item: ...
+- tree: :bookmark_tabs:[magenta] History[/] (2/3)
+  items:
+    - item: ...
+    - item: v5.0 [yellow]2012[/]
+      items:
+      - item: :books:[gray] .Net Framework 4.5[/]
+      - item: async, await
+      - item: Caller info attributes
+    - item: v6.0 [yellow]2015[/]
+      items:
+      - item: :books:[gray] .Net Framework 4.6[/] & [gray]dotnet core v1.x[/]
+      - item: Static imports, Exception filters, Property initializers, Expression bodied, members, Null propagator, String interpolation, nameof operator, Dictionary initializer
+    - item: v7.0 [yellow]2017[/]
+      items:
+      - item: :books:[gray] .Net Framework 4.7[/]
+      - item: out var, pattern matching, Tuples, Deconstruction, Wildcards, local functions, literal improvements, ref returns, more inline definitions, throw in expressions
+    - item: v7.1 [yellow]2017[/]
+      items:
+      - item: :books:[gray] dotnet core v2.0[/]
+      - item: async main, pattern matching with generics, tuples improvements
+    - item: v7.2 [yellow]2017[/]
+      items:
+      - item: private protected, conditional ref
+    - item: v7.3 [yellow]2018[/]
+      items:
+      - item: :books:[gray] .Net Framework 4.8[/] & [gray]dotnet core v2.1 and v2.2[/]
+      - item: several improvements
+    - item: ...
+- tree: :bookmark_tabs:[magenta] History[/] (3/3)
+  items:
+    - item: ...
+    - item: v8.0 [yellow]2019[/]
+      items:
+      - item: :books:[gray] dotnet core v3.x[/]
+      - item: Nullable reference types, Asynchronous streams, Range and Index
+      - item: Pattern Matching improvements, Using declaration, Default interface methods
+    - item: v9.0 [yellow]2020[/]
+      items:
+      - item: :books:[gray] .Net 5[/]
+      - item: Init-only properties, Records, Pattern matching improvements
+      - item: Top-level statements, Target-type new expressions, Covariant return types
+    - item: v10.0 [yellow]2021[/]
+      items:
+      - item: :books:[gray] .Net 6[/]
+      - item: ?????
+- title: New in C# 10
+- markup: |
+    [red bold]
+     ______   ___   _______  _______  ___      _______  ___   __   __  _______  ______   
+    |      | |   | |       ||       ||   |    |   _   ||   | |  |_|  ||       ||    _ |  
+    |  _    ||   | |  _____||       ||   |    |  |_|  ||   | |       ||    ___||   | ||  
+    | | |   ||   | | |_____ |       ||   |    |       ||   | |       ||   |___ |   |_||_ 
+    | |_|   ||   | |_____  ||      _||   |___ |       ||   | |       ||    ___||    __  |
+    |       ||   |  _____| ||     |_ |       ||   _   ||   | | ||_|| ||   |___ |   |  | |
+    |______| |___| |_______||_______||_______||__| |__||___| |_|   |_||_______||___|  |_|
+    [/]
+  padding:
+    top: 4
+    left: 8
+- markup: |
+    [bold][/]
+        ^                                         ____  _  _  ____                                      
+        ┃ HOT                 /                  (_  _)/ )( \(  __)                                    
+        ┃                   /                      )(  ) __ ( ) _)                                      
+        ┃                 /                       (__) \_)(_/(____)                                   
+        ┃               /            _  _   __  ____     ___  ____   __   ____  _  _  
+        ┃             /             / )( \ /  \(_  _)   / __)(  _ \ / _\ (__  )( \/ )
+        ┃           /               ) __ ((  O ) )(    ( (__  )   //    \ / _/  )  / 
+        ┃         /                 \_)(_/ \__/ (__)    \___)(__\_)\_/\_/(____)(__/
+        ┃       /                            ____   ___   __   __    ____  
+        ┃     /                             / ___) / __) / _\ (  )  (  __)
+        ┃   /                               \___ \( (__ /    \/ (_/\ ) _)
+        ┃ /                CRAZY            (____/ \___)\_/\_/\____/(____) 
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━>
+        ┃
+  padding:
+    top: 4
+    left: 8
+- markup: |
+    [bold][/]
+     __ __    ___  _      ____       ___ ___    ___  __ 
+    |  |  |  /  _]]| |    |    \     |   |   |  /  _]]|  |
+    |  |  | /  [[_ | |    |  o  )    | _   _ | /  [[_ |  |
+    |  _  ||    _]]| |___ |   _/     |  \_/  ||    _]]|__|
+    |  |  ||   [[_ |     ||  |       |   |   ||   [[_  __ 
+    |  |  ||     ||     ||  |       |   |   ||     ||  |
+    |__|__||_____||_____||__|       |___|___||_____||__|
+    
+    [underline cyan bold]csharp10.developerro.com[/]
+  padding:
+    top: 4
+    left: 8
+- code: |
+    // Imports.cs
+    global using System;
+    global using static Developerro.Constants;
+    global using Alias = Developerro.MyClass;
+  title: ":light_bulb: [underline bold white]Global Using[/]\n"
+  showHeader: true
+  padding:
+    top: 2
+    left: 8
+- markup: &vote
+  value: |
+    [yellow]
+     __ __   ___   ______    ___  __ 
+    |  |  | /   \ |      |  /  _]]|  |
+    |  |  ||     ||      | /  [[_ |  |
+    |  |  ||  O  ||_|  |_||    _]]|__|
+    |  :  ||     |  |  |  |   [[_  __ 
+     \   / |     |  |  |  |     ||  |
+      \_/   \___/   |__|  |_____||__|
+    [/]
+  padding:
+    top: 4
+    left: 8
+- code: |
+    var wtf = $@"%!&#"; // best code line ever
+
+    const string baseUrl = $"https://www.developerro.com";
+    const string blogUrl = $"{baseUrl}/blog";
+    const string videosUrl = $"{baseUrl}/videos";
+
+    const string pi = $"{3.14}"; // problem
+  title: ":light_bulb: [underline bold white]Constant interpolated strings[/]\n"
+  showHeader: true
+  padding:
+    top: 2
+    left: 8
+- markup: *vote
+- code: |
+    public record struct MyRecordStruct(int Id, string Name);
+
+    public record class MyRecordClass1(int Id, string Name); // same than
+    public record MyRecordClass2(int Id, string Name);
+
+    public abstract record class MyClass(int Id); // wtf!
+  title: ":light_bulb: [underline bold white]Record structs[/]\n"
+  showHeader: true
+  padding:
+    top: 2
+    left: 8
+- markup: *vote
+- code: |
+    interface IAddable<T> where T : IAddable<T>
+    {
+      static abstract T Zero { get; }
+      static abstract T operator +(T t1, T t2);
+    }
+    struct Int32 : ..., IAddable<Int32>
+    {
+      static Int32 I.operator +(Int32 x, Int32 y) => x + y;
+      public static int Zero => 0;
+    }
+
+    public interface IAsyncFactory<T>
+    {
+      abstract static Task<T> CreateAsync();
+    }
+  title: ":light_bulb: [underline bold white]Static abstract members in interfaces (I)[/]\n"
+  showHeader: true
+  padding:
+    top: 2
+    left: 8
+- code: |
+    public interface IExample
+    {
+      string DefaultInstanceProperty => "default instance property";
+      static string DefaultStaticProperty => "default static property";
+    }
+    class MyGenericClass<T> where T : class, IExample
+    {
+      public MyGenericClass(T t)
+      {
+        var a = t.DefaultInstanceProperty;
+        var b = T.DefaultStaticProperty; // ???
+        var c = t.DefaultStaticProperty; // ???
+        var d = IExample.DefaultStaticProperty;
+      }
+    }
+  title: ":light_bulb: [underline bold white]Static abstract members in interfaces (II)[/]\n"
+  showHeader: true
+  padding:
+    top: 2
+    left: 8
+- markup: *vote
+- code: |
+    namespace Company.Project
+    {
+      public class Product
+      {
+        /*...*/
+      }
+    }
+    // --------------------------
+    namespace Company.Project;
+    public class Product
+    {
+        /*...*/
+    }
+    // --------------------------
+    namespace Company;
+    namespace Project;
+    public class Product
+    {
+      /*...*/
+    }
+  title: ":light_bulb: [underline bold white]File scoped namespaces[/]\n"
+  showHeader: true
+  padding:
+    top: 2
+    left: 8
+- markup: *vote
+- code: |
+    app.MapAction([HttpGet("/")] () => new Todo(Id: 0, Name: "Name"));
+    app.MapAction([HttpPost("/")] ([FromBody] Todo todo) => todo);
+    
+    // Allow lambdas with explicit return type
+    var f4 = () => 1;              // System.Func<int>
+    var f5 = () : string => null;  // System.Func<string>
+
+    // Infer a natural delegate type for lambdas and method groups
+    Delegate d1 = 1.GetHashCode;
+    Delegate o1 = (int x) => x;
+    object o1 = (int x) => x;
+
+    // Allow lambdas with attributes
+    var controllerAction = [HttpGet("/")]([FromBody] Todo todo) => todo
+  title: ":light_bulb: [underline bold white]Lambda improvements[/]\n"
+  showHeader: true
+  padding:
+    top: 2
+    left: 8
+- markup: *vote
+- code: |
+    public class SomeAttribute<T> : Attribute
+    {
+      /*...*/
+    }
+    public class GenericClass<T>
+    {
+      [SomeAttribute<T>]
+      public void DoSomething(T input) { /*...*/ }
+    }
+
+    public class MyBaseController<TEntity> : Controller
+    {
+      [ProducesResponseType(200, typeof(TEntity))] // error
+      [ProducesResponseType<TEntity>(200)]         // new feature
+      [ProducesResponseType(400)]
+      public virtual Task<IActionResult> GetById(int id) { /*...*/ }
+    }
+  title: ":light_bulb: [underline bold white]Allow Generic Attributes[/]\n"
+  showHeader: true
+  padding:
+    top: 2
+    left: 8
+- markup: *vote
+- code: |
+    (int, bool) MyFunction() => (10, true);
+
+    // Mix Declarations and Variables
+    bool wasOk = false;
+    (var result1, wasOk) = MyFunction();
+    if (wasOk) return (result1, wasOk);
+
+    (var result2, wasOk) = MyFunction();
+    if (wasOk) return (result2, wasOk);
+
+    // Default deconstruction
+    (int i, string j) = default;
+  title: ":light_bulb: [underline bold white]Deconstruction improvements[/]\n"
+  showHeader: true
+  padding:
+    top: 2
+    left: 8
+- markup: *vote
+- code: |
+    collection switch
+    {
+       { 1, 2, 3, .., 5 } => /*...*/
+       { 1, .., 3, 4, 5 } => /*...*/
+    }
+  title: ":light_bulb: [underline bold white]List patterns[/]\n"
+  showHeader: true
+  padding:
+    top: 2
+    left: 8
+- markup: *vote
+- code: |
+    public string MyProperty
+    {
+      get { return field; }
+      set
+      {
+        field = value;
+        NotifyOfPropertyChange(nameof(MyProperty));
+      }
+    }
+  title: ":light_bulb: [underline bold white]Property-Scoped Fields[/]\n"
+  showHeader: true
+  padding:
+    top: 2
+    left: 8
+- markup: *vote
+- code: |
+    class Foobar
+    {
+      public string Foo { get; required set; }
+      public string Bar { get; required init; }
+    }
+    
+    class Foobar
+    {
+      public Foobar(string Foo, string Bar)
+      {
+        this.Foo = Foo;
+        this.Bar = Bar;
+      }
+      public string Foo { get; set; }
+      public string Bar { get; init; }
+    }
+  title: ":light_bulb: [underline bold white]Required Properties[/]\n"
+  showHeader: true
+  padding:
+    top: 2
+    left: 8
+- markup: *vote
+- tree: :books:[magenta] Bibliografía[/]
+  items:
+    - item: Estado del compilador Roslyn 
+      items:
+      - item: :link:[gray] https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md[/]
+    - item: Csharp 10 Board
+      items:
+      - item: :link:[gray] https://github.com/dotnet/csharplang/milestone/19[/]
+    - item: Artículos en [red]developerro.com[/]
+      items:
+      - item: :link:[gray] https://www.developerro.com/2019/02/05/historia-csharp/[/]
+      - item: :link:[gray] https://www.developerro.com/2021/05/19/csharp-10/[/]
+- title: Thank you!
+  centered: true
+  alignment: center
