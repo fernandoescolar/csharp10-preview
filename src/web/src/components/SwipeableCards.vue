@@ -92,16 +92,14 @@ export default {
         { src: '00.jpg', name: 'Test' },
         { src: '00.jpg', name: 'Another Test' },
         { src: '01.jpg', name: 'Global Using' },
-        { src: '02.jpg', name: 'Constant interpolated strings' },
-        { src: '03.jpg', name: 'Record structs' },
-        { src: '04.jpg', name: 'Static abstract members in interfaces' },
-        { src: '05.jpg', name: 'File scoped namespaces' },
-        { src: '06.jpg', name: 'Lambda improvements' },
-        { src: '07.jpg', name: 'Allow Generic Attributes' },
+        { src: '02.jpg', name: 'File scoped namespaces' },
+        { src: '03.jpg', name: 'Constant interpolated strings' },
+        { src: '04.jpg', name: 'Record structs' },
+        { src: '05.jpg', name: 'Parameterless struct constrs.' },
+        { src: '06.jpg', name: 'Interfaces: static abstract' },
+        { src: '07.jpg', name: 'Caller expression attribute' },
         { src: '08.jpg', name: 'Deconstruction improvements' },
-        { src: '09.jpg', name: 'List patterns' },
-        { src: '10.jpg', name: 'Property-Scoped Fields' },
-        { src: '11.jpg', name: 'Required Properties' }
+        { src: '09.jpg', name: 'Lambda improvements' },
       ]
     }
   },

@@ -1,5 +1,5 @@
 ﻿title: Hot Crazy C# 10
-date: 2021-06-30
+date: 2021-10-09
 slides:
 - markup: |
     [underline bold white]Fernando Escolar:[/]
@@ -278,76 +278,6 @@ slides:
     top: 4
     left: 8
 - code: |
-    var wtf = $@"%!&#"; // best code line ever
-
-    const string baseUrl = $"https://www.developerro.com";
-    const string blogUrl = $"{baseUrl}/blog";
-    const string videosUrl = $"{baseUrl}/videos";
-
-    const string pi = $"{3.14}"; // problem
-  title: ":light_bulb: [underline bold white]Constant interpolated strings[/]\n"
-  showHeader: true
-  padding:
-    top: 2
-    left: 8
-- markup: *vote
-- code: |
-    public record struct MyRecordStruct(int Id, string Name);
-
-    public record class MyRecordClass1(int Id, string Name); // same than
-    public record MyRecordClass2(int Id, string Name);
-
-    public abstract record class MyClass(int Id); // wtf!
-  title: ":light_bulb: [underline bold white]Record structs[/]\n"
-  showHeader: true
-  padding:
-    top: 2
-    left: 8
-- markup: *vote
-- code: |
-    interface IAddable<T> where T : IAddable<T>
-    {
-      static abstract T Zero { get; }
-      static abstract T operator +(T t1, T t2);
-    }
-    struct Int32 : ..., IAddable<Int32>
-    {
-      static Int32 I.operator +(Int32 x, Int32 y) => x + y;
-      public static int Zero => 0;
-    }
-
-    public interface IAsyncFactory<T>
-    {
-      abstract static Task<T> CreateAsync();
-    }
-  title: ":light_bulb: [underline bold white]Static abstract members in interfaces (I)[/]\n"
-  showHeader: true
-  padding:
-    top: 2
-    left: 8
-- code: |
-    public interface IExample
-    {
-      string DefaultInstanceProperty => "default instance property";
-      static string DefaultStaticProperty => "default static property";
-    }
-    class MyGenericClass<T> where T : class, IExample
-    {
-      public MyGenericClass(T t)
-      {
-        var a = t.DefaultInstanceProperty;
-        var b = T.DefaultStaticProperty; // ???
-        var c = t.DefaultStaticProperty; // ???
-        var d = IExample.DefaultStaticProperty;
-      }
-    }
-  title: ":light_bulb: [underline bold white]Static abstract members in interfaces (II)[/]\n"
-  showHeader: true
-  padding:
-    top: 2
-    left: 8
-- markup: *vote
-- code: |
     namespace Company.Project
     {
       public class Product
@@ -375,12 +305,124 @@ slides:
     left: 8
 - markup: *vote
 - code: |
+    var wtf = $@"%!&#"; // best code line ever
+
+    const string baseUrl = $"https://www.developerro.com";
+    const string blogUrl = $"{baseUrl}/blog";
+    const string videosUrl = $"{baseUrl}/videos";
+
+    const string pi = $"{3.14}"; // (!)Thread.CurrentCulture
+  title: ":light_bulb: [underline bold white]Constant interpolated strings[/]\n"
+  showHeader: true
+  padding:
+    top: 2
+    left: 8
+- markup: *vote
+- code: |
+    public record struct MyRecordStruct(int Id, string Name);
+
+    public record class MyRecordClass1(int Id, string Name); // same than
+    public record MyRecordClass2(int Id, string Name);
+        
+    public abstract record class MyClass(int Id); // wtf!
+  title: ":light_bulb: [underline bold white]Record structs[/]\n"
+  showHeader: true
+  padding:
+    top: 2
+    left: 8
+- markup: *vote
+- code: |
+    struct MyStruct
+    {
+        public int MyProperty { get; set; }
+
+        public MyStruct() // error
+        {
+        }
+     }
+
+    struct MyStruct
+    {
+        public int MyProperty { get; set; }
+
+        public MyStruct() // Ok
+        {
+            MyProperty = default;
+        }
+    }
+  title: ":light_bulb: [underline bold white]Parameterless struct constructors[/]\n"
+  showHeader: true
+  padding:
+    top: 2
+    left: 8
+- markup: *vote
+- code: |
+    interface IAddable<T> where T : IAddable<T>
+    {
+      static abstract T Zero { get; }
+      static abstract T operator +(T t1, T t2);
+    }
+    struct Int32 : ..., IAddable<Int32>
+    {
+      static Int32 I.operator +(Int32 x, Int32 y) => x + y;
+      public static int Zero => 0;
+    }
+
+    public interface IAsyncFactory<T>
+    {
+      abstract static Task<T> CreateAsync();
+    }
+  title: ":light_bulb: [underline bold white]Static abstract members in interfaces[/]\n"
+  showHeader: true
+  padding:
+    top: 2
+    left: 8
+- markup: *vote
+- code: |
+    public static class FooExtensions
+    {
+        public static void Bar(
+            this Foo f, 
+            [CallerArgumentExpression("f")] 
+            string fExpression = null) 
+        { 
+        }
+    }
+
+    var f = new Foo();
+    f.Bar(); // fExpression = "f"
+    (f as Foo).Bar(); // fExpression = "(this as Foo)"
+  title: ":light_bulb: [underline bold white]Caller expression attribute[/]\n"
+  showHeader: true
+  padding:
+    top: 2
+    left: 8
+- markup: *vote
+- code: |
+    (int, bool) MyFunction() => (10, true);
+
+    // Mix Declarations and Variables
+    bool wasOk = false;
+    (var result1, wasOk) = MyFunction();
+    if (wasOk) return (result1, wasOk);
+
+    (var result2, wasOk) = MyFunction();
+    if (wasOk) return (result2, wasOk);
+
+  
+  title: ":light_bulb: [underline bold white]Deconstruction improvements[/]\n"
+  showHeader: true
+  padding:
+    top: 2
+    left: 8
+- markup: *vote
+- code: |
     app.MapAction([HttpGet("/")] () => new Todo(Id: 0, Name: "Name"));
     app.MapAction([HttpPost("/")] ([FromBody] Todo todo) => todo);
     
     // Allow lambdas with explicit return type
     var f4 = () => 1;              // System.Func<int>
-    var f5 = () : string => null;  // System.Func<string>
+    var f5 = string () => null;  // System.Func<string>
 
     // Infer a natural delegate type for lambdas and method groups
     Delegate d1 = 1.GetHashCode;
@@ -395,6 +437,31 @@ slides:
     top: 2
     left: 8
 - markup: *vote
+- tree: :books:[magenta] Bibliografía[/]
+  items:
+    - item: Estado del compilador Roslyn 
+      items:
+      - item: :link:[gray] https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md[/]
+    - item: Csharp 10 Board
+      items:
+      - item: :link:[gray] https://github.com/dotnet/csharplang/milestone/19[/]
+    - item: Artículos en [red]developerro.com[/]
+      items:
+      - item: :link:[gray] https://www.developerro.com/2019/02/05/historia-csharp/[/]
+      - item: :link:[gray] https://www.developerro.com/2021/05/19/csharp-10/[/]
+- title: What's next...
+  centered: true
+  alignment: center
+- code: |
+    (int i, string j) = (default, default); // ok
+
+    (int i, string j) = default; // proposal
+
+  title: ":light_bulb: [underline bold white]Default deconstruction[/]\n"
+  showHeader: true
+  padding:
+    top: 2
+    left: 8
 - code: |
     public class SomeAttribute<T> : Attribute
     {
@@ -418,26 +485,6 @@ slides:
   padding:
     top: 2
     left: 8
-- markup: *vote
-- code: |
-    (int, bool) MyFunction() => (10, true);
-
-    // Mix Declarations and Variables
-    bool wasOk = false;
-    (var result1, wasOk) = MyFunction();
-    if (wasOk) return (result1, wasOk);
-
-    (var result2, wasOk) = MyFunction();
-    if (wasOk) return (result2, wasOk);
-
-    // Default deconstruction
-    (int i, string j) = default;
-  title: ":light_bulb: [underline bold white]Deconstruction improvements[/]\n"
-  showHeader: true
-  padding:
-    top: 2
-    left: 8
-- markup: *vote
 - code: |
     collection switch
     {
@@ -449,7 +496,6 @@ slides:
   padding:
     top: 2
     left: 8
-- markup: *vote
 - code: |
     public string MyProperty
     {
@@ -465,7 +511,6 @@ slides:
   padding:
     top: 2
     left: 8
-- markup: *vote
 - code: |
     class Foobar
     {
@@ -488,19 +533,6 @@ slides:
   padding:
     top: 2
     left: 8
-- markup: *vote
-- tree: :books:[magenta] Bibliografía[/]
-  items:
-    - item: Estado del compilador Roslyn 
-      items:
-      - item: :link:[gray] https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md[/]
-    - item: Csharp 10 Board
-      items:
-      - item: :link:[gray] https://github.com/dotnet/csharplang/milestone/19[/]
-    - item: Artículos en [red]developerro.com[/]
-      items:
-      - item: :link:[gray] https://www.developerro.com/2019/02/05/historia-csharp/[/]
-      - item: :link:[gray] https://www.developerro.com/2021/05/19/csharp-10/[/]
 - title: Thank you!
   centered: true
   alignment: center
